@@ -1,14 +1,10 @@
 // db.js
-const { Pool } = require("pg");
+const { Pool } = require('pg')
+require('dotenv').config()
 
 const pool = new Pool({
-  user: "aoh_ownership",
-  host: "postgresql-178159-0.cloudclusters.net", // Change this if your database is hosted elsewhere
-  database: "postgres",
-  password: "AOH2007",
-  port: 10007, // Default PostgreSQL port
-});
-
+  connectionString: "postgres://default:FKPcf52pgmZb@ep-patient-bush-a40pc8yq-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require?sslmode=require",
+})
 
 
 
